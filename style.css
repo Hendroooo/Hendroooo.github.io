@@ -1,0 +1,298 @@
+/* 1. RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background: #f5f5f7;
+    color: #111827;
+}
+
+/* Reusable container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Links & buttons */
+a {
+    color: #4200ac;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    background: #4200ac;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+/* 2. HEADER & NAVIGATION */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.logo span {
+    color: #4200ac;
+}
+
+.nav a {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #4200ac;
+}
+
+/* 3. HERO SECTION */
+.hero {
+    padding: 4rem 0 3rem;
+    background: #eff6ff;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* 4. GENERIC SECTIONS */
+.section {
+    padding: 3rem 0;
+}
+
+.section-alt {
+    background: #ffffff;
+}
+
+.section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    margin-bottom: 2rem;
+    color: #4b5563;
+}
+
+/* ABOUT SECTION */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.about-grid h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.about-grid ul {
+    list-style: disc inside;
+    color: #4b5563;
+}
+
+/* 5. PROJECT CARDS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #f9fafb;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.project-links {
+    margin-top: 0.75rem;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 0.75rem;
+    font-size: 0.9rem;
+}
+
+/* 6. CONTACT */
+.contact-list {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 0.35rem;
+}
+
+/* 7. FOOTER */
+.site-footer {
+    padding: 1.5rem 0 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b7280;
+    align-items: center;
+    text-align: center;
+}
+
+/* 8. RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+}
+
+/* === DARK MODE OVERRIDES === */
+
+body {
+    background: #020617;      /* very dark background */
+    color: #e5e7eb;           /* light text */
+}
+
+.site-header {
+    background: #020617;
+    border-bottom: 1px solid #1f2937;
+}
+
+.hero {
+    background: #0b1120;      /* slightly lighter than body */
+}
+
+.section-alt {
+    background: #020617;      /* same as body so it blends */
+}
+
+.section-intro {
+    color: #9ca3af;           /* softer grey */
+}
+
+.about-grid ul {
+    color: #e5e7eb;           /* make sure list text is light */
+}
+
+/* Project cards on dark background */
+.project-card {
+    background: #0b1120;
+    border-color: #1f2937;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.project-meta {
+    color: #9ca3af;
+}
+
+.project-card p {
+    color: #e5e7eb;
+}
+
+/* Links & buttons in dark mode */
+a {
+    color: #a855ff;           /* purple accent on dark */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background: #a855ff;
+    color: #ffffff;
+}
+
+/* Footer text lighter */
+.site-footer {
+    color: #9ca3af;
+}

@@ -1,0 +1,63 @@
+<header class="site-header">
+  <div class="container header-content">
+    <div class="logo">My<span>Portfolio</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+        Hello, my name is Hendrick Landeweerd, and I am a student in Creative Technology at the University of Twente, having previously studied Applied Earth Sciences at TU Delft. This portfolio aims to provide insight into my experience at Creative Technology by showcasing the projects I have created, to give you an idea of who I am and what I enjoy doing.
+        </p>
+
+        <div class="about-grid">
+          <div>
+            <h3>Skills</h3>
+            <ul>
+              <li>Programming: Python, C, Java, ...</li>
+              <li>Tools: MATLAB, Git, ...</li>
+              <li>Other: Technical writing, teamwork, ...</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Focus Areas</h3>
+            <ul>
+              <li>Linear Algebra & Calculus</li>
+              <li>Software Engineering</li>
+              <li>Data Analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
