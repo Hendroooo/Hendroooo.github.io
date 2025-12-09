@@ -107,7 +107,7 @@ a:hover {
 .hero p {
     max-width: 600px;
     font-size: 1rem;
-    color: #4b5563;
+    color: #bdbbbb;
 }
 
 /* 4. GENERIC SECTIONS */
@@ -234,3 +234,4 @@ a:hover {
         font-size: 1.9rem;
     }
 }
+
