@@ -217,7 +217,7 @@ a:hover {
 }
 
 /* 8. RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (max-width: 100px) {
     .header-content {
         flex-direction: column;
         align-items: flex-start;
