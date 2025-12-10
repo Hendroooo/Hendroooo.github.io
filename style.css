@@ -210,6 +210,12 @@ a:hover {
     text-align: center;
 }
 
+/* About Images */
+.about-photo img {
+  width: 250px;
+  border-radius: 10px;
+}
+
 /* 8. RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .header-content {
