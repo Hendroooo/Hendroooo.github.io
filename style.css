@@ -166,7 +166,7 @@ a:hover {
 
 .project-card img {
    width: 100%;
-    height: 100px;        /* FORCE height */
+    height: 250px;        /* FORCE height */
     object-fit: cover;    /* crop instead of stretch */
     border-radius: 0.5rem;
     display: block;
