@@ -1,3 +1,15 @@
+<header class="site-header">
+  <div class="container header-content">
+    <div class="logo">Hendrick<span>Landeweerd</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,62 +18,18 @@
   <title>About – My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-content">
-      <div class="logo">Hendrick<span>Landeweerd</span></div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<main>
+  <section class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        Feel free to contact me via email or phone number
+      </p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:your.email@university.com">hendricklandeweerd@gmail.com</a></li>
+        <li>Phone number: <a href="tel:+31640417341" target="_blank">+31640417341</a></li>
+        <!-- more links if you want -->
+      </ul>
     </div>
-  </header>
-
-  <main>
-    <section class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Feel free to contact me via email or phone number
-        </p>
-        <ul class="contact-list">
-          <li>Email: <a href="mailto:your.email@university.com">hendricklandeweerd@gmail.com</a></li>
-          <li>Phone number: <a href="tel:+31640417341">+31640417341</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    window.addEventListener('load', () => {
-      document.body.classList.add('loaded');
-    });
-
-    document.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-
-        if (
-          href &&
-          !href.startsWith('#') &&
-          !href.startsWith('http') &&
-          !href.startsWith('mailto:') &&
-          !href.startsWith('tel:') &&
-          !this.hasAttribute('target') &&
-          !this.hasAttribute('download')
-        ) {
-          e.preventDefault();
-          document.body.classList.remove('loaded');
-          document.body.classList.add('fade-out');
-
-          setTimeout(() => {
-            window.location.href = href;
-          }, 350);
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+  </section>
+</main>

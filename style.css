@@ -247,17 +247,3 @@ a:hover {
         font-size: 1.9rem;
     }
 }
-
-/* Page transition */
-body {
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
-
-body.loaded {
-  opacity: 1;
-}
-
-body.fade-out {
-  opacity: 0;
-}
