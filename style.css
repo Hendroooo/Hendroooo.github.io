@@ -171,6 +171,16 @@ a:hover {
     text-decoration: none;
 }
 
+.project-detail-image {
+    display: block;
+    max-width: 600px;   /* adjust size */
+    width: 100%;
+    height: auto;
+
+    margin: 2rem auto;  /* centers the image */
+    border-radius: 0.5rem;
+}
+
 .project-car:hover {
     text-decoration: none;
 }
